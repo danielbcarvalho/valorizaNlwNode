@@ -5,6 +5,9 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
 } from "typeorm";
+
+import { Expose } from "class-transformer"
+
 import { v4 as uuid } from "uuid";
 
 @Entity("tags")
@@ -20,6 +23,12 @@ class Tag {
 
   @UpdateDateColumn()
   updated_at: Date;
+
+  // a hora que for 'expor' a entidade irá criar um nome a mais por ex: 'hashtag...'
+  @Expose({name: "nameCustom"})
+  nameCustom(): string {
+    return `#${this.name}`
+  } 
 
   constructor() {
     if(!this.id) {

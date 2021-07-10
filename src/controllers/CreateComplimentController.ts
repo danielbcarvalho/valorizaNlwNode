@@ -1,8 +1,9 @@
 import { Request, Response } from "express";
+import { RequestCustom } from "../@types";
 import { CreateComplimentService } from "../services/CreateComplimentService";
 
 class CreateComplimentController {
-  async handle(request: Request, response: Response) {
+  async handle(request: RequestCustom, response: Response) {
     const { tag_id,  user_receiver, message } = request.body;
     const { user_id } = request;
 

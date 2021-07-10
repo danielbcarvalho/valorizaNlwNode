@@ -1,12 +1,13 @@
 import { Request, Response, NextFunction } from "express";
 import { verify } from "jsonwebtoken";
+import { RequestCustom } from "../@types";
 
 interface IPayload extends Request {
   sub: string
 }
 
 export function ensureAuthenticated(
-  request: Request,
+  request: RequestCustom,
   response: Response,
   next: NextFunction
 ) {
@@ -20,7 +21,6 @@ export function ensureAuthenticated(
   }
 
   const [, token] = authToken.split(" ");
-  console.log("🚀 ~ file: ensureAuthenticated.ts ~ line 20 ~ token", token);
 
   // Validação do token
   try {
