@@ -1,30 +1,15 @@
 # Valoriza
 
-## Regras
-- Cadastro de usuários
-  - Não é permitido cadastrar mais de um usuário com o mesmo e-mail
-  - Não é permitido cadastrar usuário sem e-mail
-
-- Cadastro de TAG
-  - Não é permitido cadastrar mais de uma tag com o mesmo nome
-  - Não é permitido cadastrar TAG sem nome
-  - Não é permitido o cadastro por usuários que não sejam administradores
-
-- Cadastro de elogios
-  - Não é permitido um usuário cadastrar um elogio para si
-  - Não é permitido cadastrar elogio para usuários inválidos 
-
-
 <h1 align="center">Valoriza</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/danielbcarvalho/we-event?color=orange">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/danielbcarvalho/valorizaNlwNode?color=orange">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/danielbcarvalho/we-event?color=orange">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/danielbcarvalho/valorizaNlwNode?color=orange">
 
-  <img alt="License" src="https://img.shields.io/github/license/danielbcarvalho/we-event?color=orange">
+  <img alt="License" src="https://img.shields.io/github/license/danielbcarvalho/valorizaNlwNode?color=orange">
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/danielbcarvalho/we-event?color=orange" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/danielbcarvalho/valorizaNlwNode?color=orange" />
 
 
 </p>
@@ -61,6 +46,19 @@ Developed during the 'Next Level Week #6' from [Rocketseat](https://rocketseat.c
 * Create and list Tags
 * Create and list Compliments (receiving user and sending user)
 
+## Business Rules
+- User registration
+   - It is not allowed to register more than one user with the same email
+   - It is not allowed to register user without e-mail
+
+- TAG registration
+   - It is not allowed to register more than one tag with the same name
+   - It is not allowed to register TAG without a name
+   - Registration by users who are not administrators is not allowed
+
+- Registration of compliments
+   - A user is not allowed to register a compliment for themselves
+   - It is not allowed to register praise for invalid users
 
 ## Technologies
 
